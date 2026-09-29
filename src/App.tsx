@@ -5,9 +5,9 @@ type Person = { id: number; name: string; color: string }
 type BillItem = { id: number; name: string; price: number; people: number[] }
 
 const initialPeople: Person[] = [
-  { id: 1, name: 'Alex', color: '#f08b5d' },
-  { id: 2, name: 'Jamie', color: '#4f8c82' },
-  { id: 3, name: 'Taylor', color: '#c49a3a' },
+  { id: 1, name: 'Alex', color: '#c6a2f2' },
+  { id: 2, name: 'Jamie', color: '#89a9e8' },
+  { id: 3, name: 'Taylor', color: '#a98bd7' },
 ]
 
 const initialItems: BillItem[] = [
@@ -43,7 +43,7 @@ function App() {
     event.preventDefault()
     const name = newPerson.trim()
     if (!name) return
-    setPeople((current) => [...current, { id: Date.now(), name, color: ['#7c6bb3', '#d86f87', '#5e9bb4'][current.length % 3] }])
+    setPeople((current) => [...current, { id: Date.now(), name, color: ['#b997e5', '#7f9bd8', '#aa8bcf'][current.length % 3] }])
     setNewPerson('')
   }
 
