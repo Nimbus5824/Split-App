@@ -77,6 +77,7 @@ function App() {
         <p className="eyebrow">DINNER WITH FRIENDS · OCT 12</p>
         <h1>Make the split<br /><em>feel easy.</em></h1>
         <p className="intro-copy">Add the bill, choose who shared each item, and let everyone see their fair share.</p>
+        <label className="receipt-cta"><span aria-hidden="true">▣</span> Take photo of receipt<input type="file" accept="image/*" capture="environment" /></label>
       </section>
 
       <section className="bill-section" aria-labelledby="bill-title">
