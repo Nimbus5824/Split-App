@@ -83,9 +83,9 @@ function App() {
       <section className="bill-section" aria-labelledby="bill-title">
         <div className="section-heading"><div><p className="eyebrow">01 / THE BILL</p><h2 id="bill-title">What did we share?</h2></div><span className="bill-total">{money(total)}</span></div>
         <div className="item-list">
-          {items.map((item) => (
+          {items.map((item, index) => (
             <article className="item-row" key={item.id}>
-              <div className="item-main"><div className="item-symbol" aria-hidden="true">{item.name.charAt(0).toUpperCase()}</div><div><strong>{item.name}</strong><span>{item.people.length === people.length ? 'Everyone' : `${item.people.length} people`} · {money(item.price)}</span></div></div>
+              <div className="item-main"><div className="item-symbol" aria-hidden="true">{String(index + 1).padStart(2, '0')}</div><div><strong>{item.name}</strong><span>{item.people.length === people.length ? 'Everyone' : `${item.people.length} people`} · {money(item.price)}</span></div></div>
               <div className="item-people" aria-label={`Who shared ${item.name}`}>
                 {people.map((person) => <button className={`person-chip ${item.people.includes(person.id) ? 'is-selected' : ''}`} style={{ '--person-color': person.color } as React.CSSProperties} key={person.id} type="button" aria-pressed={item.people.includes(person.id)} onClick={() => togglePersonOnItem(item.id, person.id)}>{person.name.charAt(0)}</button>)}
               </div>
