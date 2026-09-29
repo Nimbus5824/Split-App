@@ -2,6 +2,12 @@
 
 A Vite + React + TypeScript starter for a shareable split-planning experience.
 
+## Public preview
+
+Temporary preview: https://a480edf5219942.lhr.life/
+
+This preview is served through a temporary tunnel and remains available while the local preview process is running.
+
 ## Run locally
 
 ```bash
@@ -17,6 +23,25 @@ npm run build
 ```
 
 The production output is written to `dist/`. This project can be deployed directly to Vercel, Netlify, or another static host.
+
+## Project structure
+
+```text
+Split App/
+├─ public/          Static assets
+├─ src/             React application source
+├─ index.html       HTML entry point
+├─ vite.config.ts   Vite and public-host configuration
+├─ vercel.json      Vercel build configuration
+└─ package.json     Scripts and dependencies
+```
+
+## Deploy to Vercel
+
+1. Import this repository into Vercel.
+2. Keep the framework preset as Vite.
+3. Use `npm run build` as the build command.
+4. Use `dist` as the output directory.
 
 ## GitHub
 
