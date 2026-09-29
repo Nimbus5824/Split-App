@@ -104,6 +104,7 @@ function App() {
 
       <section className="adjust-section" aria-labelledby="adjust-title">
         <div className="section-heading"><div><p className="eyebrow">03 / THE DETAILS</p><h2 id="adjust-title">Make it fair.</h2></div><span className="receipt-mark" aria-hidden="true">✳</span></div>
+        <p className="tax-note">Local sales tax · San Francisco, CA · 8.5% dummy rate</p>
         <label className="range-row"><span>Tax <b>{tax}%</b></span><input type="range" min="0" max="20" step="0.5" value={tax} onChange={(event) => setTax(Number(event.target.value))} /></label>
         <label className="range-row"><span>Tip <b>{tip}%</b></span><input type="range" min="0" max="30" step="1" value={tip} onChange={(event) => setTip(Number(event.target.value))} /></label>
         <div className="summary-lines"><span>Subtotal <b>{money(subtotal)}</b></span><span>Tax + tip <b>{money(taxAmount + tipAmount)}</b></span><strong>Total <b>{money(total)}</b></strong></div>
