@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Split App
 
 A Vite + React + TypeScript starter for a shareable split-planning experience.
