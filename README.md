@@ -3,12 +3,6 @@
 
 A Vite + React + TypeScript starter for a shareable split-planning experience.
 
-## Public preview
-
-Temporary preview: https://a480edf5219942.lhr.life/
-
-This preview is served through a temporary tunnel and remains available while the local preview process is running.
-
 ## Run locally
 
 ```bash
